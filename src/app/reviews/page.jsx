@@ -3,7 +3,7 @@ import Heading from "@/src/components/Heading";
 import { getPagedReviews, getPageCount } from "@/lib/reviews";
 import AnimatedElement from "@/src/components/AnimatedElement";
 import Image from "next/image";
-import HomeBanner from "../components/HomeBanner";
+import HomeBanner from "@/src/components/HomeBanner";
 
 // export const dynamic = 'force-dynamic';
 
