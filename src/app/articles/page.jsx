@@ -33,7 +33,7 @@ export default async function ReviewsPage({ searchParams }) {
             <AnimatedElement>
               <Link
                 className="flex flex-col items-center sm:flex-row post-card border rounded bg-slate-200 hover:shadow-lg"
-                href={`/reviews/${review.slug}`}
+                href={`/articles/${review.slug}`}
               >
                 <div className="post-card__image" style={{backgroundImage: `url(${review.image}`}}></div>
                 <div className="post-card__content">

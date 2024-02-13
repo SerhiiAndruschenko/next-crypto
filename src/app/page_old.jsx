@@ -11,7 +11,7 @@ export default async function Home() {
       <div className="post-card border rounded hover:shadow-lg bg-slate-200">
         <Link
           className="flex flex-col items-center sm:flex-row"
-          href={`/reviews/${featuredReview.slug}`}
+          href={`/articles/${featuredReview.slug}`}
         >
           <img
             src={featuredReview.image}
