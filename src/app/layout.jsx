@@ -5,12 +5,11 @@ import "./globals.css";
 import "@/public/styles/header.scss";
 import "@/public/styles/footer.scss";
 import "@/public/styles/reviews.scss";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import Image from "next/image";
 import Head from "next/head";
 import Script from "next/script";
 import { ThemeProvider } from "../components/theme-provider";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -39,7 +38,6 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="flex flex-col min-h-screen bg-">
-        <Analytics />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <header className="px-4 py-3 mx-auto">
             <NavBar />
@@ -49,8 +47,8 @@ export default function RootLayout({ children }) {
             All Rights Reserved. © 2024
           </footer>
         </ThemeProvider>
-        <SpeedInsights />
       </body>
+      <GoogleAnalytics gaId="G-5HZ7EPGQE1" />
     </html>
   );
 }
