@@ -24,16 +24,15 @@ export default async function ReviewPage({ params: { slug } }) {
 
   return (
     <>
-      <div style={{backgroundImage: `url(${review.image}`}} className="article-head flex flex-col gap-x-9 justify-between items-center mb-9 sm:flex-row">
-        <div className="w-full">
 
-          <Heading>{review.title}</Heading>
-          <AnimatedElement>
-            <p className="italic font-exo2 pb-3">{review.date}</p>
-            <ShareLinkButton />
-          </AnimatedElement>
+
+      <AnimatedElement>
+        <div style={{backgroundImage: `url(${review.image}`}} className="article-hero">
+          <h2 className="font-orbitron">{review.date}</h2>
+          <h1 className="font-orbitron">{review.title}</h1>
+          <ShareLinkButton />
         </div>
-      </div>
+      </AnimatedElement>
 
       <AnimatedElement>
         <article
