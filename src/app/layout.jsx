@@ -34,7 +34,6 @@ export default function RootLayout({ children }) {
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358243501215789"
           crossOrigin="anonymous"
-          strategy="lazyOnload"
         />
       </head>
       <body className="flex flex-col min-h-screen bg-">
